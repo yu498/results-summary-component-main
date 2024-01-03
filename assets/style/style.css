@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+body {
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  border-radius: 1rem;
+  font-family: "Hanken Grotesk", serif;
+}
+.container {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--White);
+  border-radius: 1rem;
+}
+.container .result {
+  background-image: linear-gradient(
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 20rem;
+  padding: 2rem;
+}
+.container .result .result-title {
+  color: var(--Light-lavender);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.result-fraction {
+  background-image: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+  border-radius: 120px;
+  width: 10rem;
+  height: 10rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.result-fraction span {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--White);
+}
+
+.result-fraction p {
+  color: var(--Light-lavender);
+}
+.great-title {
+  color: var(--White);
+  margin-bottom: 1rem;
+}
+.great-content {
+  text-align: center;
+  color: var(--Light-lavender);
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.summary h2 {
+  padding: 1rem;
+}
+.summary ul li {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  column-gap: 4rem;
+}
+.projectMame img,
+p {
+  display: inline-block;
+}
+.reactionSum {
+  background-color: rgb(255, 246, 245);
+  color: rgb(252, 160, 164);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.memorySum {
+  background-color: rgb(255, 248, 236);
+  color: rgb(245, 196, 113);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.verbalSum {
+  background-color: rgb(242, 250, 250);
+  color: rgb(50, 186, 149);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.visualSum {
+  background-color: rgb(243, 243, 253);
+  color: rgb(128, 130, 223);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.fraction {
+  color: var(--Light-lavender);
+  font-weight: 500;
+}
+.fraction span {
+  color: var(--Light-royal-blue);
+  font-weight: 500;
+}
+.btn {
+  background-color: rgb(48, 59, 89);
+  padding: 1rem;
+  border: none;
+  border-radius: 5rem;
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--Violet-blue);
+}
+
+@media (max-width: 540px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--White);
+        border-radius: 1rem;
+      }
+
+}
+body>footer{
+  position: sticky;
+  top: 100vh;
+  font-size: 1rem;
+  color: black;
+}
+.attribution{
+  font-size: 11px;
+  text-align: center;
+}
